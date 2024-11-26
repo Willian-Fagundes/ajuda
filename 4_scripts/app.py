@@ -11,7 +11,7 @@ engine = create_engine('sqlite:///banco.db', echo = True)
 st.write('Preços Placas de Video no site Kabum')
 
 # Leitura do arquivo CSV
-df = pd.read_sql('SELECT * FROM dados', con = engine)
+df = pd.read_sql('SELECT * FROM Dados', con = engine)
 
 
 # Boxplot - Preço à vista
