@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 import plotly.express as px
 import plotly.graph_objects as go
 
-engine = create_engine('sqlite:///banco.db', echo = True)
+engine = create_engine('sqlite:///4_scripts/banco.db', echo = True)
 df = pd.read_sql('SELECT * FROM dados', con = engine)
 
 # Título da aplicação
